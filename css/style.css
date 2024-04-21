@@ -62,3 +62,10 @@
     user-select: none;
     cursor: pointer;
 }
+.nav__filter{
+    background: var(--color-1);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+}
