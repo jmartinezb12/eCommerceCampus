@@ -54,3 +54,11 @@
     padding-right: 1.5rem;
     border: 1px solid var(--color-3);
 }
+.search__icon{
+    position: absolute;
+    display: block;
+    bottom: .6rem;
+    left: .8rem;
+    user-select: none;
+    cursor: pointer;
+}
