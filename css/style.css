@@ -71,3 +71,8 @@
     inset: 0;
     margin: auto;
 }
+.main {
+    /* background: red; */
+    padding: var(--space-layout-padding-lr);
+    margin-top: 15px;
+}
