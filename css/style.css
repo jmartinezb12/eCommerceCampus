@@ -117,3 +117,12 @@
     width: 100%;
     padding: var(--space-layout-padding-lr);
 }
+.footer__ul{
+    background: var(--color-4);
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+}
