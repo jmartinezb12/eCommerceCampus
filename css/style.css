@@ -80,3 +80,12 @@
     /* background: violet; */
     /* padding: 10px; */
 }
+.nav__ul {
+    /* background: darkgrey; */
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+}
