@@ -31,3 +31,11 @@
     width: 100%;
     /* object-fit: contain; */
 }
+.nav{
+    /* background: red; */
+    padding: var(--space-layout-padding-lr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
