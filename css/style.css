@@ -107,3 +107,6 @@
     color: var(--color-1);
     background: var(--color-5);
 }
+.nav__ul li a:hover{
+    filter: invert(1);
+}
