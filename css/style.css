@@ -26,3 +26,8 @@
     border-radius: 50%;
     overflow: hidden;
 }
+
+.header__login img{
+    width: 100%;
+    /* object-fit: contain; */
+}
