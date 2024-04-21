@@ -14,11 +14,9 @@
     align-items: center;
     height: 60px;
 }
-
 .header__information{
     /* background: green; */
 }
-
 .header__login{
     /* background: violet; */
     width: 40px;
@@ -26,7 +24,6 @@
     border-radius: 50%;
     overflow: hidden;
 }
-
 .header__login img{
     width: 100%;
     /* object-fit: contain; */
@@ -40,12 +37,10 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .nav__search{
     /* background: yellow; */
     position: relative;
 }
-
 .nav__search input{
     outline: none;
     width: 260px;
