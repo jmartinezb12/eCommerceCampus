@@ -76,3 +76,7 @@
     padding: var(--space-layout-padding-lr);
     margin-top: 15px;
 }
+.main__nav {
+    /* background: violet; */
+    /* padding: 10px; */
+}
