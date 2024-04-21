@@ -110,3 +110,10 @@
 .nav__ul li a:hover{
     filter: invert(1);
 }
+.footer{
+    /* background: red; */
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    padding: var(--space-layout-padding-lr);
+}
