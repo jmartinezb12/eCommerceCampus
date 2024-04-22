@@ -227,7 +227,5 @@
     justify-content: center;
 }
 .footer__ul li a{
-    width: 24px;
-    height: 24px;
-    
+    display: flex;    
 }
