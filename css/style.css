@@ -118,6 +118,7 @@
 .main__article{
     height: 70vh;
     margin-top: 15px;
+    padding-bottom: 12vh;
     /* background: red; */
     display: flex;
     flex-wrap: wrap;
