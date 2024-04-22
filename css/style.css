@@ -110,6 +110,20 @@
 .nav__ul li a:hover{
     filter: invert(1);
 }
+
+
+
+
+
+.main__article{
+    height: 70vh;
+    margin-top: 15px;
+    /* background: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
 .footer{
     /* background: red; */
     position: fixed;
