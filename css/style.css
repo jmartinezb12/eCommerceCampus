@@ -144,6 +144,10 @@
     height: var(--layout-imagen-height);
     overflow: hidden;
 }
+.section__front_page img{
+    position: absolute;
+}
+
 .footer{
     /* background: red; */
     position: fixed;
