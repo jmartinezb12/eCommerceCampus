@@ -168,6 +168,13 @@
 .main__article section small{
     align-self: flex-start;
 }
+.section__price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--color-2);
+    margin-top: 10px;
+}
 
 .footer{
     /* background: red; */
