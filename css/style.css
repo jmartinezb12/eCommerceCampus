@@ -175,6 +175,9 @@
     color: var(--color-2);
     margin-top: 10px;
 }
+.section__price span{
+    font-family: "EncodeSans-Semibold";
+}
 
 .footer{
     /* background: red; */
