@@ -182,6 +182,11 @@
     display: flex;
     gap: 5px;
 }
+.main__article section:nth-child(4n+1),
+.main__article section:nth-child(4n+4){
+    /* background: orange; */
+    height: 380px;
+}
 
 .footer{
     /* background: red; */
