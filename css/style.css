@@ -147,6 +147,11 @@
 .section__front_page img{
     position: absolute;
 }
+.section__front_page img:first-child{
+    width: var(--layout-imagen-width);
+    height: var(--layout-imagen-height);
+    object-fit: cover;
+}
 
 .footer{
     /* background: red; */
