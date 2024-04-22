@@ -156,6 +156,11 @@
     top: 10px;
     right: 10px;
 }
+.main__article section h5{
+    font-family: "EncodeSans-Semibold";
+    color: var(--color-2);
+    margin-bottom: 9px;
+}
 
 .footer{
     /* background: red; */
