@@ -161,7 +161,9 @@
     color: var(--color-2);
     margin-bottom: 9px;
 }
-
+.main__article section small{
+    color: var(--color-3);
+}
 .footer{
     /* background: red; */
     position: fixed;
