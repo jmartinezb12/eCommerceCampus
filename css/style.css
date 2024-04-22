@@ -152,6 +152,10 @@
     height: var(--layout-imagen-height);
     object-fit: cover;
 }
+.section__front_page img:last-child{
+    top: 10px;
+    right: 10px;
+}
 
 .footer{
     /* background: red; */
