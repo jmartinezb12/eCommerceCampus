@@ -187,6 +187,11 @@
     /* background: orange; */
     height: 380px;
 }
+.main__article section:nth-child(4n-1) {
+    /* background: violet; */
+    margin-top: -54px;
+}
+
 
 .footer{
     /* background: red; */
