@@ -214,6 +214,7 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: 40px;
+    box-shadow: 0px 0px 55px 10px #fff;
 }
 .footer__ul li{
     list-style: none;
