@@ -164,6 +164,11 @@
 .main__article section small{
     color: var(--color-3);
 }
+.main__article section h5,
+.main__article section small{
+    align-self: flex-start;
+}
+
 .footer{
     /* background: red; */
     position: fixed;
