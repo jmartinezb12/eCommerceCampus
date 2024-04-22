@@ -178,6 +178,10 @@
 .section__price span{
     font-family: "EncodeSans-Semibold";
 }
+.price__score{
+    display: flex;
+    gap: 5px;
+}
 
 .footer{
     /* background: red; */
