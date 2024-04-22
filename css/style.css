@@ -124,6 +124,17 @@
     justify-content: space-between;
     overflow-y: scroll;
 }
+.main__article section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background: green; */
+    width: 48%;
+    /* height: 380px; */
+    margin-bottom: 4%;
+}
 .footer{
     /* background: red; */
     position: fixed;
