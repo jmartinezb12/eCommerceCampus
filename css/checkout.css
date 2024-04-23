@@ -89,3 +89,50 @@
     height: 20px;
     width: 20px;
 }
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.dropdown__button{
+    background-color: var(--color-3);
+    border-radius: 5px;
+    width: 100%;
+    color: var(--color-1);
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: var(--color-5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    bot
+}
+
+.dropdown-content div{
+    
+}
+
+.dropdown-content div:hover{
+
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    width: 100%;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: red;
+    color: var(--color-5);
+    b
+}
