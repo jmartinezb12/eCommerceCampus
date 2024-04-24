@@ -14,3 +14,9 @@
     width: 100%;
     /* background: green; */
 }
+.article__product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
