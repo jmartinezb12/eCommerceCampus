@@ -10,3 +10,7 @@
     padding: var(--space-layout-padding-lr);
     margin-top: var( --space-layout-padding-t);
 }
+.main__section {
+    width: 100%;
+    /* background: green; */
+}
