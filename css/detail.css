@@ -73,3 +73,9 @@
 .detail__score a{
     text-decoration: none;
 }
+.product__information{
+    /* background: red; */
+    width: 75%;
+    margin-top: 15px;
+    color: var(--color-3);
+}
