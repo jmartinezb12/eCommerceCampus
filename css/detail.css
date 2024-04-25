@@ -43,3 +43,10 @@
 .article__detail {
     /* background: red; */
 }
+.detail__head {
+    margin-top: 20px;
+    /* background: green; */
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
