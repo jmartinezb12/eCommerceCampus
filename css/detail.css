@@ -32,3 +32,11 @@
     height: var(--layout-imagen-height-detail);
     object-fit: cover;
 }
+.product__menu {
+    /* background: violet; */
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 0 15px;
+}
