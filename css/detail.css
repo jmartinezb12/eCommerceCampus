@@ -79,3 +79,6 @@
     margin-top: 15px;
     color: var(--color-3);
 }
+.product__information strong{
+    color: var(--color-2);
+}
