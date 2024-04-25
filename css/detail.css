@@ -67,3 +67,6 @@
     gap: 5px;
     align-items: center;
 }
+.detail__score span{
+    color: var(--color-3);
+}
