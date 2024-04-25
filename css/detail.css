@@ -62,3 +62,8 @@
 .product__select span{
     font-family: "EncodeSans-Bold";
 }
+.detail__score {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
