@@ -53,3 +53,9 @@
 .detail__head h1{
     font-family: "EncodeSans-SemiBold";
 }
+.product__select {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
