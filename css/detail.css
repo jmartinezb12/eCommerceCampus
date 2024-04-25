@@ -70,3 +70,6 @@
 .detail__score span{
     color: var(--color-3);
 }
+.detail__score a{
+    text-decoration: none;
+}
