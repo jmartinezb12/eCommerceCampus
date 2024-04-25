@@ -17,6 +17,9 @@
 .header__information{
     /* background: green; */
 }
+.header__information span{
+    font-family: "EncodeSans-Bold";
+}
 .header__login{
     /* background: violet; */
     width: 40px;
@@ -227,7 +230,13 @@
     justify-content: center;
 }
 .footer__ul li a{
-    display: flex;    
+    width: 105px;
+    height: 35px;
+    font-family: "EncodeSans-Medium";
+    /* background: orange; */
+    text-decoration: none;
+    display: flex;
+        
 }
 .footer__ul li a img{
     object-fit: contain;
