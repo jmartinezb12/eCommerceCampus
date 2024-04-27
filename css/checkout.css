@@ -195,3 +195,13 @@
     justify-content: space-between;
     margin-bottom: 15px;
 }
+.bill__fee {
+    /* background: violet; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-3);
+}
