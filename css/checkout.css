@@ -222,3 +222,10 @@
     color: var(--color-2);
     font-family: "EncodeSans-SemiBold";
 }
+.footer{
+    /* background: red; */
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    padding: var(--space-layout-padding-lr);
+}
