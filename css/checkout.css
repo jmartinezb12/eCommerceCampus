@@ -186,3 +186,6 @@
     /* background: red; */
     margin-top: 25px;
 }
+.section__bill span{
+    font-family: "EncodeSans-SemiBold";
+}
