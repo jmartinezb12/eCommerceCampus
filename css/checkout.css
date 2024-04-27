@@ -216,3 +216,9 @@
 .bill__subtotal label{
     color: var(--color-2);
 }
+.bill__total span,
+.bill__fee span,
+.bill__subtotal span{
+    color: var(--color-2);
+    font-family: "EncodeSans-SemiBold";
+}
