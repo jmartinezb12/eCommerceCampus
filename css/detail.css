@@ -99,3 +99,11 @@
     margin-top: 5px;
     font-family: "EncodeSans-Bold";
 }
+
+.footer{
+    /* background: red; */
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    padding: var(--space-layout-padding-lr);
+}
