@@ -179,3 +179,7 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
+
+.dropdown:hover .dropdown__button .shopping__option{
+    filter: invert(1);
+}
