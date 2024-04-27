@@ -252,3 +252,6 @@
     gap: 5px;
     color: var(--color-5);
 }
+.footer__ul li a span{
+    font-family:"EncodeSans-Medium";
+}
