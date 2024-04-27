@@ -205,3 +205,9 @@
     border-bottom-style: solid;
     border-bottom-color: var(--color-3);
 }
+.bill__subtotal {
+    /* background: green; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
