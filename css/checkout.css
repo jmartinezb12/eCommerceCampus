@@ -189,3 +189,9 @@
 .section__bill span{
     font-family: "EncodeSans-SemiBold";
 }
+.bill__total {
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
