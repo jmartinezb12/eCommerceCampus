@@ -7,7 +7,14 @@
 }
 .header{
     /* background: red; */
-    padding: var(--space-layout-padding-lr);
+    /* padding: var(--space-layout-padding-lr); */
+}
+.header__nav {
+    /* background: violet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 0 15px;
 }
 .main{
     padding: var(--space-layout-padding-lr);
