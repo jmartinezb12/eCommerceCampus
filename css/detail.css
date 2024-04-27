@@ -99,6 +99,10 @@
     margin-top: 5px;
     font-family: "EncodeSans-Bold";
 }
+.product__size h5,
+.product__color h5{
+    padding-bottom: 10px;
+}
 
 .footer{
     /* background: red; */
@@ -132,4 +136,11 @@
 }
 .footer__ul li a img{
     width: 25px;
+}
+.footer__ul li a span{
+    font-family:"EncodeSans-Medium";
+}
+.footer__ul li a del{
+    color:var(--color-3);
+    font-family:"EncodeSans-Regular";
 }
