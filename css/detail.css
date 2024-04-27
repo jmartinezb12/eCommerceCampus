@@ -94,3 +94,8 @@
     display: flex;
     justify-content: space-between;
 }
+.product__size,
+.product__color{
+    margin-top: 5px;
+    font-family: "EncodeSans-Bold";
+}
