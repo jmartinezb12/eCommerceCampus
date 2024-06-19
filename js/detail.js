@@ -6,6 +6,7 @@ let main__section_gallery = document.querySelector("#main__section__gallery");
 let main__section__title = document.querySelector("#main__section__title");
 
 addEventListener("DOMContentLoaded", async(e)=>{
+   
     let params = new URLSearchParams(location.search);
     let id = params.get('id');
     if(!localStorage.getItem(id)) localStorage.setItem(id, JSON.stringify(await getProductId({id})));
@@ -13,8 +14,11 @@ addEventListener("DOMContentLoaded", async(e)=>{
     let info = JSON.parse(localStorage.getItem(id));
     main__section_gallery.innerHTML = await galleryCategory(info);
     main__section__title.innerHTML = await titleProductDetail(info);
+    let btn_minus = document.querySelector("#btn_minus");
+    let btn_plus = document.querySelector("#btn_plus");
     
-
+    product__information.innerHTML = await productDetail(info);
+    footer__ul.innerHTML = await buttonCartDetails(info);
     // let {data} = res;
     // let {
     //     category_path,
@@ -28,4 +32,7 @@ addEventListener("DOMContentLoaded", async(e)=>{
     //     ...dataUpdate
     // } = data;
     // console.log(dataUpdate);
+
+    btn_minus.addEventListener("click",quantity)
+    btn_plus.addEventListener("click",quantity)
 })
