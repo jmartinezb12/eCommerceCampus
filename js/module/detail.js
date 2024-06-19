@@ -11,3 +11,12 @@ export const getProductId = async({id:idCategory})=>{
     let data = res.json();
     return data;
 }
+
+const quantity = async (e) => {
+    let params = new URLSearchParams(location.search);
+    let id = params.get('id');
+    let res = JSON.parse(localStorage.getItem(id)).data;
+
+    let product_original_price = 0;
+    if(res.pro)
+}
