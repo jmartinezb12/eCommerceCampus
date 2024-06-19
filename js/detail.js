@@ -1,9 +1,12 @@
+import { buttonCartDetails } from "./components/footer.js";
 import { galleryCategory } from "./components/gallery.js";
-import { titleProductDetail } from "./components/section.js";
+import { productDetail, titleProductDetail } from "./components/section.js";
 import { getProductId } from "./module/detail.js";
 
 let main__section_gallery = document.querySelector("#main__section__gallery");
 let main__section__title = document.querySelector("#main__section__title");
+let product__information = document.querySelector(".product__information");
+let footer__ul = document.querySelector(".footer__ul");
 
 addEventListener("DOMContentLoaded", async(e)=>{
    
