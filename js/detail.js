@@ -22,6 +22,28 @@ addEventListener("DOMContentLoaded", async(e)=>{
     
     product__information.innerHTML = await productDetail(info);
     footer__ul.innerHTML = await buttonCartDetails(info);
+    
+    btn_minus.addEventListener('click', async e => {
+        let quantity = parseInt(quantitySpan.textContent);
+        if (quantity > 1) {
+          quantity--;
+          quantitySpan.textContent = quantity;
+      
+          const productPrice = parseFloat(info.data.product_price.replace('$', ''));
+          let totalPrice = quantity * productPrice;
+      
+          if (info.data.product_original_price) {
+            const originalPrice = parseFloat(info.data.product_original_price.replace('$', ''));
+            precioTotal.innerHTML = /*html*/`
+              <span>Add to Cart $${totalPrice.toFixed(2)}<del><sub>$${(quantity * originalPrice).toFixed(2)}</sub></del></span>
+            `;
+          } else {
+            precioTotal.innerHTML = /*html*/`
+              <span>Add to Cart $${totalPrice.toFixed(2)}</span>
+            `;
+          }
+        }
+    });
     // let {data} = res;
     // let {
     //     category_path,
@@ -36,8 +58,8 @@ addEventListener("DOMContentLoaded", async(e)=>{
     // } = data;
     // console.log(dataUpdate);
 
-    btn_minus.addEventListener("click",quantity)
-    btn_plus.addEventListener("click",quantity)
+    btn_minus.addEventListener("click",quantity);
+    btn_plus.addEventListener("click",quantity);
 })
 
 const quantity = async (e)=>{
@@ -65,3 +87,8 @@ const quantity = async (e)=>{
     //     timer: 2000
     // });
 }
+
+footer__ul.addEventListener("click", async (e) =>{
+    let asd = JSON.parse(localStorage.getItem(id));
+    sessionStorage.setItem(id, JSON.stringify(asd));
+})
