@@ -34,15 +34,35 @@ addEventListener("DOMContentLoaded", async(e)=>{
       
           if (info.data.product_original_price) {
             const originalPrice = parseFloat(info.data.product_original_price.replace('$', ''));
-            precioTotal.innerHTML = /*html*/`
+            totalPrice.innerHTML = /*html*/`
               <span>Add to Cart $${totalPrice.toFixed(2)}<del><sub>$${(quantity * originalPrice).toFixed(2)}</sub></del></span>
             `;
           } else {
-            precioTotal.innerHTML = /*html*/`
+            totalPrice.innerHTML = /*html*/`
               <span>Add to Cart $${totalPrice.toFixed(2)}</span>
             `;
           }
         }
+    });
+    btn_plus.addEventListener("click", async e => {
+      let quantity = parseInt(quantitySpan.textContent);
+      quantity++;
+      quantitySpan.textContent = quantity;
+    
+      if (info.data.product_price !== null) {
+        let productPrice = parseFloat(info.data.product_price.replace('$', ''));
+        let totalPrice = quantity * productPrice;
+        let originalPrice = info.data.product_original_price
+          ? parseFloat(info.data.product_original_price.replace('$', '')) * quantity
+          : null;
+    
+        totalPrice.innerHTML = /*html*/`
+          <span>
+            Add to Cart $${totalPrice}
+            ${originalPrice ? `<del><sub>$${originalPrice}</sub></del>` : ''}
+          </span>
+        `;
+      }
     });
     // let {data} = res;
     // let {
