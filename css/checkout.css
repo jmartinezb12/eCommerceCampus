@@ -108,15 +108,15 @@
     font-family: "EncodeSans-SemiBold";
 }
 
-.section__Shopping{
+.section__shopping{
     /* background: red; */
     margin-top: 20px;
 }
-.Shopping__title{
+.shopping__title{
     /* background: blue; */
     margin-bottom: 15px;
 }
-.Shopping__title h3{
+.shopping__title h3{
     color: var(--color-1);
     font-family: "EncodeSans-SemiBold";
 }
