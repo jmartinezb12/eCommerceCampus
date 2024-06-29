@@ -39,3 +39,27 @@ export const galleryCategory = ({data: {product_photos}} = res)=>{
             </div>
         </article>`;
 }
+
+export const galleryCheckPrice = (res) => {
+    const { data: dataUpdate } = res || {};
+    const totalItems = 9;
+    const shippingFee = 0;
+    const subTotal = 131.97;
+  
+    return /*html*/`
+      <article class="section__bill">
+        <div class="bill__total">
+          <label class="total__items">(${totalItems} items)</label>
+          <span class="total__price">$${subTotal.toFixed(2)}</span>
+        </div>
+        <div class="bill__fee">
+          <label>Shipping fee</label>
+          <span>$${shippingFee.toFixed(2)}</span>
+        </div>
+        <div class="bill__subtotal">
+          <label>Sub Total</label>
+          <span class="subtotal__price">$${subTotal.toFixed(2)}</span>
+        </div>
+      </article>
+    `;
+};  
