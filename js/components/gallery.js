@@ -62,4 +62,44 @@ export const galleryCheckPrice = (res) => {
         </div>
       </article>
     `;
-};  
+};
+
+export const galleryCheckout = async () => {
+    const keys = Object.keys(sessionStorage);
+    let plantilla = "";
+
+    keys.forEach(key => {
+        const objectData = JSON.parse(sessionStorage.getItem(key));
+        if (objectData.exist_detail) {
+            const { product_photo, product_title, product_star_rating, product_price } = diccionario.data;
+            plantilla += generateProductTemplate(product_photo, product_title, product_star_rating, product_price);
+        }
+    });
+
+    return plantilla;
+};
+
+const generateProductTemplate = (photo, title, rating, price) => {
+    const shortTitle = title.substring(0, 15);
+    const starRating = rating ? rating : "*No Ratings*";
+
+    return /*html*/`
+        <article class="details__product">
+            <div class="product__imagen">
+                <img src="${photo}">
+            </div>
+            <div class="product__description">
+                <h3>${shortTitle}...</h3>
+                <small>⭐ ${starRating}</small>
+                <span id="precio">${price}</span>
+            </div>
+            <div class="product__custom">
+                <img src="../storage/img/option.svg">
+                <div id="precio" class="product__select">
+                    <img src="../storage/img/minus.svg" id="btn_minus">
+                    <span id="span_quantity">1</span>
+                    <img src="../storage/img/plus.svg" id="btn_plus">
+                </div>
+            </div>
+        </article>`;
+};
